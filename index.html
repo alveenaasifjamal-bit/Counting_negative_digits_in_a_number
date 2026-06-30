@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = +prompt(
+        "enter the negative digit of the number and i will tell you it's length",
+      );
+      let count = 0;
+      num = Math.abs(num);
+      if (num === 0) {
+        count++;
+      }
+      while (num > 0) {
+        num = Math.floor(num / 10);
+        count++;
+      }
+
+      console.log(count);
+    </script>
+  </body>
+</html>
